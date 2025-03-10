@@ -15,10 +15,11 @@
 .hy {
   border-bottom: 1px solid gold;
   text-transform: Title;
+  font-size: 90%;
 }
 
 p.hy::first-letter {
-  font-size: 125%;
+  font-size: 100%;
   
   color: red;
 }
@@ -48,4 +49,24 @@ p.sub {
 }
 ul {
   margin-left: 20px;
+}
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:11px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+/*Go Back Button*/
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
