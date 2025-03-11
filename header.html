@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Header</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <meta name="google-site-verification" content="4C1KJ_aoT-dvOnkVDQuXBJUiCe3oUkRbAie2P6Tf1v0">
-    <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  </head>
-    <body>
-        <header style="text-align:center; padding-top: 30px; padding-bottom: 20px; color: red;">
-            <span style="font-size: 15px"><b>The Banking Circular</b></span><br>
-            <span style="font-size: 12px">Currently in force</span>
-        </header>
-    </body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>The Banking Circular</h1>
+  <p>Prevailing Circulars</p>
+</div>
+
+<div class="header" id="myHeader" style="justify-content: space-around;display: flex; color: hotpink: !important;">
+  <a href="https://hafizurbagjan.github.io/banking/">Home</a>
+  <button onclick="history.back()">Go Back</button>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
