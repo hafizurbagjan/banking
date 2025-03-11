@@ -58,6 +58,13 @@ body {font-size:11px;}
 .w3-half img:hover{opacity:1}
 
 /* Style the footer */
+header {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Style the footer */
 footer {
   background-color: #777;
   padding: 10px;
