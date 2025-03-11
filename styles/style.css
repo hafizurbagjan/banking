@@ -65,9 +65,13 @@ header {
   color: white;
 }
 /* Style the footer */
+
 footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
   color: white;
+  text-align: center;
 }
