@@ -8,16 +8,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.top-container {
+.bottom-container {
   background-color: green;
   padding: 5px;
   text-align: center;
 }
 
-.header {
+.footer {
   padding: 10px 16px;
   background: red;
   color: #f1f1f1;
+  align-items: center; /* Vertically aligns */
 }
 
 .content {
@@ -26,23 +27,23 @@ body {
 
 .sticky {
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 102px;
+  padding-bottom: 102px;
 }
 </style>
 </head>
 <body>
 
-<div class="top-container">
+<div class="bottom-container">
   <h1>The Banking Circular</h1>
   <p>Prevailing Circulars</p>
 </div>
 
-<div class="header" id="myHeader" style="justify-content: space-around;display: flex; text-decoration: none;">
+<div class="footer" id="myfooter" style="justify-content: space-around;display: flex; text-decoration: none;">
   <a style="text-decoration: none; color:whitesmoke" href="https://hafizurbagjan.github.io/banking/">Home</a>
   <a style="text-decoration: none; color:whitesmoke" href="https://hafizurbagjan.github.io/banking/#bc">Back</a>
   <a style="text-decoration: none; color:whitesmoke" href="mailto:hege@example.com">Contact</a>
@@ -51,14 +52,14 @@ body {
 <script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var footer = document.getElementById("myfooter");
+var sticky = footer.offsetBottom;
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    footer.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    footer.classList.remove("sticky");
   }
 }
 </script>

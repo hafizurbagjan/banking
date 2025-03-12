@@ -10,11 +10,27 @@
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+        border-radius: 0px 0px 50px 70px; /* Top-left, top-right, bottom-right, bottom-left */
+      }
+    </style>
   </head>
     <body>
-        <footer style="text-align:center; color: yellow;">
-            <span style="font-size: 15px"><b>This is Footer</b></span><br>
-            <span style="font-size: 12px">2nd line of footer</span>
+        <footer style="text-align:center;">
+          <div class="row">
+            <div class="col-md-12">
+               <p class="coyright-text">Designed & Developed by Md. Hafizur Rahman</p>
+            </div>
+         </div>
         </footer>
     </body>
 </html>
